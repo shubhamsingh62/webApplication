@@ -1,0 +1,23 @@
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a *ngFor="let tabItem of tabItems" [class.active]="tabItem.isSelected" (click)="onTabClicked(tabItem)" class="nav-item nav-link" id="nav-home-tab" href="javascript:void(0)" role="tab" aria-controls="nav-home" aria-selected="true">{{tabItem.text}}</a>
+    </div>
+  </nav>
+  <div class="tab-content">
+    <div role="tabpanel" aria-labelledby="nav-home-tab">
+        <input type="text" class="searchItem" [(ngModel)]="filter" placeholder="search product">
+            <div class="flex-container product-main" *ngIf="newitemsArray">
+                <div  class="product-wrap" *ngFor="let item of newitemsArray | filter:filter">
+                    <div class="product-img">
+                      <img src="/../assets/img1.jpg">
+                    </div>
+                    <div class="product-content">
+                      <h5>{{item?.name}}</h5>
+                      <h6 class="price">Price: ₹ <span>{{item?.price}}</span></h6>
+                      <p>{{item?.text}}</p>
+                    </div>
+                  </div>
+
+            </div>
+    </div>
+  </div>
