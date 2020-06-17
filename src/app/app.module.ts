@@ -11,8 +11,6 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { HeaderComponent } from './header/header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeTabComponent } from './home-tab/home-tab.component';
-import { HomeTabDataComponent } from './home-tab-data/home-tab-data.component';
-import { CategoryFilterPipe } from './category-filter.pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
@@ -24,8 +22,6 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     HeaderComponent,
     NavMenuComponent,
     HomeTabComponent,
-    HomeTabDataComponent,
-    CategoryFilterPipe,
   ],
   imports: [
     BrowserModule,

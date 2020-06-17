@@ -1,9 +1,24 @@
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-    <button class="openbtn" (click)="openNav()">☰</button>
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+  <div class="menuitem">
+      <button class="openbtn" class="navbtn" (click)="openNav()">☰</button>
+  <!-- <a class="navbar-brand" href="#" style="margin-left: 20px;">Company name</a> -->
+      <img class="navbar-brand" src="/../assets/logo.jpg" style="margin-left: 20px;">
+  </div>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="#">Sign out</a>
+      <!-- <a class="nav-link" href="#">Sign out</a> -->
+      <img src="/../assets/user.png" style="width: 45px;display: inline-block;">
+      <!-- <a href="#">Shubham</a> -->
+      <div class="dropdown" style="display: inline-block;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            shubham
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">profile</a>
+            <a class="dropdown-item" href="#">logout</a>
+          </div>
+        </div>
+
     </li>
   </ul>
 </nav>

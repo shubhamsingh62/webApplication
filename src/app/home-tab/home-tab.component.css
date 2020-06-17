@@ -1,5 +1,5 @@
 .product-list { padding: 50px 0px; margin-top: 70px; }
-.product-wrap { max-width: 33.33333%; flex: 33.33333%; padding: 0px 10px; }
+.product-wrap { max-width: 25%; flex: 25%; padding: 0px 10px; }
 .product-cat-wrap { margin-bottom: 30px; }
 ul.product-cat-list a { color: #000000; }
 ul.product-cat-list a:hover { color: #00a550; }
@@ -54,4 +54,68 @@ ul.product-cat-list > li { display: inline-block; text-align: center; padding: 0
 
 .searchItem {
   margin: 10px 10px;
+}
+
+.belowCategory{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+ul.dropdown-menu.dropdown-menu-left {
+  width: 250px;
+  padding: 5px 10px 15px;
+}
+
+ul.dropdown-menu.dropdown-menu-left #firstDiv {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: normal;
+}
+
+
+span.count {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  width: 15px;
+  height: 15px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+/* Responsive CSS Start Here */
+
+@media only screen and (max-width: 1200px) {
+  .container { max-width: 100%; padding: 0 15px; }
+  .hero-container { max-width: 100%; padding: 0 15px; }
+}
+
+@media only screen and (max-width: 767px) {
+   .product-wrap { max-width: 50%; flex: 50%; }
+   .hero-banner-section { min-height: 300px; }
+   .hero-contact-text h2 { font-size: 40px; }
+   .thank-popup { max-width: 260px; }
+}
+
+@media only screen and (max-width: 480px) {
+   .product-wrap { max-width: 100%; flex: 100%; margin-bottom: 20px; }
+   .hero-contact-text { width: 100%; padding: 30px 20px 20px 20px; }
+   ul.dropdown-menu.dropdown-menu-left {
+    width: 150px;
+    padding: 5px 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  ul.dropdown-menu.dropdown-menu-left {
+   width: 100px;
+   padding: 5px 10px 15px;
+ }
 }

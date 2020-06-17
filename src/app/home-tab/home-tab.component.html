@@ -5,11 +5,35 @@
   </nav>
   <div class="tab-content">
     <div role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="d-flex belowCategory">
         <input type="text" class="searchItem" [(ngModel)]="filter" placeholder="search product">
+        <div class="panel-body">
+            <!-- Single button -->
+            <div class="btn-group top-head-dropdown">
+              <!-- notification -->
+              <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                      <i class="fa fa-bell" aria-hidden="true"></i>
+                  <span class="count">2</span>
+              </span>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li id="list1">
+
+                      <div id="tophead">
+                          <div id="firstDiv" class="emptydiv" >New product added in mobile category</div>
+                          <div id="firstDiv" class="emptydiv" >New product added in laptop category</div>
+
+                     </div>
+
+                </li>
+
+              </ul>
+            </div>
+            </div>
+      </div>
             <div class="flex-container product-main" *ngIf="newitemsArray">
                 <div  class="product-wrap" *ngFor="let item of newitemsArray | filter:filter">
                     <div class="product-img">
-                      <img src="/../assets/img1.jpg">
+                      <img src="{{item?.imglink}}">
                     </div>
                     <div class="product-content">
                       <h5>{{item?.name}}</h5>

@@ -130,3 +130,10 @@ button:hover, button:focus, .button:hover, .button:focus {background-color: #00c
 button:active, .button:active {background-color: #00a550; color:#ffffff;}
 
 
+@media only screen and (max-width: 480px) {
+  .product-wrap { max-width: 100%; flex: 100%; margin-bottom: 20px; }
+  .hero-contact-text { width: 100%; padding: 30px 20px 20px 20px; }
+
+}
+
+

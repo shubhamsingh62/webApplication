@@ -37,8 +37,6 @@
 								    <input type="tel" id="phone" placeholder="Phone Number" name="phone" formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
                     <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
                         <div *ngIf="f.phone.errors.required">phone number is required</div>
-                        <div *ngIf="f.phone.errors.pattern">Invalid phone number.</div>
-
                     </div>
                 </div>
                 <div class="frm_form_field form-field">  <!-- field-required -->

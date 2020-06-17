@@ -22,3 +22,57 @@
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  float: none;
+  right: 0;
+  transform: translateX(-30px);
+  /* width: 200px; */
+}
+
+.navbtn {
+  background: black;
+  color: #fff;
+  margin-left: 15px;
+}
+
+img.navbar-brand {
+  width: 98px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 64px;
+}
+
+
+@media only screen and (max-width: 375px) {
+  nav.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .sticky-top {
+    position: fixed;
+
+    width: 100%;
+  }
+  ul.navbar-nav.px-3 {
+    padding: 0 !important;
+  }
+  .navbar-brand {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+  }
+  .menuitem {
+    display: flex;
+  }
+  .navbtn {
+    margin-left: 0px;
+  }
+  img.navbar-brand {
+    width: 47px;
+    height: 56px;
+  }
+}
+
+
+

@@ -18,7 +18,7 @@ export class ContactusComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', Validators.required , Validators.pattern('(09)[0-9 ]{9}')],
+      phone: ['', Validators.required],
       message: ['', [Validators.required]]
   });
   }
@@ -34,7 +34,6 @@ export class ContactusComponent implements OnInit {
           return;
       }
 
-      // alert('SUCCESS!! :-)')
       document.getElementById('popup').style.display = "block";
   }
 

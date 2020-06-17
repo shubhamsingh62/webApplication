@@ -112,9 +112,7 @@ td {border-width:0 0 1px 0; padding:7px 18px 8px;}
 del {color:#767676;}
 hr { display: inline-block; background-color: #ed1b23; border: 0; width: 60px; height: 3px; margin-bottom: 27px; margin-top: 0; }
 
-/* Support a widely-adopted but non-standard selector for text selection styles
- * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
- */
+
 ::selection {background-color:#303d47; color:#ffffff;}
 
 ::-moz-selection {background-color:#303d47; color:#ffffff;}
@@ -134,13 +132,9 @@ hr { display: inline-block; background-color: #ed1b23; border: 0; width: 60px; h
 
 .comment-content img, .entry-content img, .entry-summary img, #site-header img, .widget img, .wp-caption {max-width:100%;}
 
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
+
 .comment-content img[height], .entry-content img, .entry-summary img, img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"], #site-header img {height:auto;}
 img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {height:auto; max-width:100%;}
-/* Make sure embeds and iframes fit their containers */
 
 embed, iframe, object, video { max-width:100%; }
 p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {margin-bottom:0;}
@@ -231,3 +225,29 @@ body{
 }
 .flex-wrap{ flex-wrap: wrap; }
 .flex-nowrap{ flex-wrap: nowrap; }
+
+
+/* Responsive CSS Start Here */
+
+@media only screen and (max-width: 1200px) {
+  .container { max-width: 100%; padding: 0 15px; }
+  .hero-container { max-width: 100%; padding: 0 15px; }
+}
+
+@media only screen and (max-width: 767px) {
+   .product-wrap { max-width: 50%; flex: 50%; }
+   .hero-banner-section { min-height: 300px; }
+   .hero-contact-text h2 { font-size: 40px; }
+   .thank-popup { max-width: 260px; }
+}
+
+@media only screen and (max-width: 480px) {
+   .product-wrap { max-width: 100%; flex: 100%; margin-bottom: 20px; }
+   .hero-contact-text { width: 100%; padding: 30px 20px 20px 20px; }
+}
+
+@media only screen and (max-width: 375px) {
+  #main {
+    margin-top: 56px;
+  }
+}
